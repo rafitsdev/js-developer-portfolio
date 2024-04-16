@@ -24,19 +24,13 @@
 }
 
 .skills .soft-skills ul {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .soft-skills ul li {
   margin: 1rem .5rem 0 0;
-}
-
-.soft-skills ul li:nth-child(even) {
-  margin-left: 1rem;
 }
 
 .soft-skills ul li::before {
@@ -59,5 +53,11 @@
 
   .soft-skills ul li:nth-child(even) {
     margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .skills .soft-skills ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -32,21 +32,17 @@
         "logo": "https://raw.githubusercontent.com/rafitsdev/js-developer-portfolio/dinamic-data/assets/data/imgs/vscode.png"
       }
     ],
-    "softSkills": {
-        "individualSkills": [
-          "Comunicação",
-          "Story Telling",
-          "Criatividade",
-          "Flexibilidade"
-        ],
-        "teamworkSkills": [
-          "Colaboração",
-          "Resolução de Conflitos",
-          "Pensamento Crítico",
-          "Tomada de Decisão",
-          "Resiliência e Persuasão"
-        ]
-      }
+    "softSkills": [
+      "Comunicação",
+      "Story Telling",
+      "Criatividade",
+      "Flexibilidade",
+      "Colaboração",
+      "Resolução de Conflitos",
+      "Pensamento Crítico",
+      "Tomada de Decisão",
+      "Resiliência e Persuasão"
+    ]
   },
   "languages": [
     "Português BR (Nativo)",
