@@ -22,14 +22,28 @@ function updateProfileInfo(profileData) {
   email.href = `email:${profileData.email}`
 }
 
-function updateSoftSkills(profileData) {
-  const softSkills = document.getElementById('profile.skills.softSkills')
+function updateIndividualSkills(profileData) {
+  const individualSkills = document.getElementById('profile.skills.softSkills.individualSkills')
 
-  softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('')
+  individualSkills.innerHTML = profileData.skills.softSkills.individualSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
+}
+
+function updateTeamworkSkills(profileData) {
+  const teamworkSkills = document.getElementById('profile.skills.softSkills.teamworkSkills')
+
+  teamworkSkills.innerHTML = profileData.skills.softSkills.teamworkSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
+}
+
+function updateHardSkills(profileData) {
+  const hardSkills = document.getElementById('profile.skills.hardSkills')
+
+  hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
 }
 
 (async () => {
   const profileData = await fetchProfileData()
   updateProfileInfo(profileData)
-  updateSoftSkills(profileData)
+  updateHardSkills(profileData)
+  updateIndividualSkills(profileData)
+  updateTeamworkSkills(profileData)
 })()
