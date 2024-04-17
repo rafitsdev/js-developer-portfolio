@@ -72,9 +72,18 @@
   ],
   "professionalExperience": [
     {
-      "name": "UX/UI Designer / Cerrado Geeks",
-      "period": "2023 - Agosto",
-      "description": "Como universalizar a codificação postal em nível de logradouro para realizar novos projetos com maior agilidade, assertividade e menor dependência de insumos de órgãos externos aos Correios. Utilizamos a base nacional de geolocalização para conseguir mapear todas as vias, e assim, gerar CEPs a partir de Inteligência Artificial seguindo todos os parâmetros"
+      "event": "Campus Party São Paulo",
+      "title": "1º Lugar Hackathon Correios - Cerrado Geeks",
+      "period": "Agosto - 2023",
+      "challenge": "Como universalizar a codificação postal em nível de logradouro para realizar novos projetos com maior agilidade, assertividade e menor dependência de insumos de órgãos externos aos Correios.",
+      "developedProject": "Usar a base nacional de geolocalização para conseguir mapear todas as vias, e assim, gerar CEPs a partir de Inteligência Artificial seguindo todos os parâmetros"
+    },
+    {
+      "event": "CPDO SPM Week Correios",
+      "title": "Palestrante convidado",
+      "period": "16 - 17/08 de 2023",
+      "challenge": "Visita realizada como cortesia do Desafio de Inovação apresentado na Campus Party, para apresentação de produto criado no Hackathon (Fast Cep) para a Equipe de CPDO dos Correios e para conhecer as instalações da Sede dos Correios de Jaguaré. Participação de workshops e palestras de startups e empresas parceiras dos Correios.",
+      "developedProject": ""
     }
   ]
 }
