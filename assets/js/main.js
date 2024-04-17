@@ -16,7 +16,7 @@ function updateProfileInfo(profileData) {
   const phone = document.getElementById('profile.phone')
   phone.innerText = profileData.phone
   phone.href = `tel:${profileData.phone}`
-  
+
   const email = document.getElementById('profile.email')
   email.innerText = profileData.email
   email.href = `email:${profileData.email}`
@@ -40,10 +40,26 @@ function updateLanguages(profileData) {
   languages.innerHTML = profileData.languages.map(language => `<li class="languages-item">${language}</li>`).join('')
 }
 
+function updatePortfolio(profileData) {
+  const portfolio = document.getElementById('profile.portfolio')
+
+  portfolio.innerHTML = profileData.portfolio.map(project => {
+    return `
+      <li class="portfolio-item">
+        <h3 ${project.github ? 'class="portfolio-item-title github"' : 'class= "portfolio-item-title"'}>${project.name}</h3>
+        <a class="portfolio-item-link" href="${project.url}" target="_blank">
+          ${project.url}
+        </a>
+      </li>
+  `
+  }).join('')
+}
+
 (async () => {
   const profileData = await fetchProfileData()
   updateProfileInfo(profileData)
   updateHardSkills(profileData)
   updateSoftSkills(profileData)
   updateLanguages(profileData)
+  updatePortfolio(profileData)
 })()

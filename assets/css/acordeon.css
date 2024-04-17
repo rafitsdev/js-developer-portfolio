@@ -10,8 +10,8 @@
 
 .acordeon.open,
 .acordeon:hover {
-  background-color: #55569e;
-  border-color: #55569e;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, .1);
 }
 
 .acordeon .trigger {
@@ -20,8 +20,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 700;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   background: transparent;
   color: #ffffff;
 }
@@ -47,7 +46,10 @@
 
 .acordeon .trigger .acordeon-title {
   text-align: start;
+  font-family: 'Neue Machina', serif;
   font-size: 1.5rem;
+  font-weight: 400;
+  color: #e3e3e3;
 }
 
 .acordeon .content {
@@ -61,4 +63,15 @@
   display: block;
   height: 100%;
   opacity: 1;
+  padding: 1rem 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .acordeon .trigger {
+    padding: 1rem 2.5rem;
+  }
+
+  .acordeon.open .content {
+    padding: 1rem 2.5rem;
+  }
 }

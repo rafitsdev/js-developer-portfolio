@@ -1,12 +1,9 @@
 .skills {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 750px;
+  max-width: 800px;
   margin: 1rem auto;
-}
-
-.skills .skills-title {
-  padding-left: 2rem;
+  gap: 2rem;
 }
 
 .skills .hard-skills ul {
@@ -44,20 +41,23 @@
   margin-right: .5rem;
 }
 
+@media only screen and (min-width: 540px) {
+  .skills .soft-skills ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (min-width: 680px) {
   .skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 1rem;
+    gap: 2rem;
+    margin: 0;
+    max-width: fit-content;
   }
 
-  .soft-skills ul li:nth-child(even) {
-    margin-left: 0;
-  }
-}
-
-@media only screen and (min-width: 540px) {
   .skills .soft-skills ul {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
   }
 }

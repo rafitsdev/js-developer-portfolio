@@ -39,6 +39,8 @@ ul,
 ol,
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main {
@@ -48,10 +50,23 @@ li {
   border-radius: 1rem;
 }
 
-.main::before,
-.main::after {
+.main::before {
   content: '';
   background-image: url('/assets/img/background.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 140vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.main::after {
+  content: '';
+  background-image: url('/assets/img/background-bottom.svg');
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
