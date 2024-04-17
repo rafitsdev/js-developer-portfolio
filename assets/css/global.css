@@ -53,7 +53,7 @@ li {
 
 .main::before {
   content: '';
-  background-image: url('/assets/img/background.svg');
+  background-image: url('assets/img/background.svg');
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -67,7 +67,7 @@ li {
 
 .main::after {
   content: '';
-  background-image: url('/assets/img/background-bottom.svg');
+  background-image: url('assets/img/background-bottom.svg');
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
