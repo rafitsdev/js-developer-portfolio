@@ -50,13 +50,23 @@
   ],
   "portfolio": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "name": "Página de portfolio criada no curso de Formação da DIO",
+      "url": "https://github.com/rafitsdev/js-developer-portfolio",
       "github": true
     },
     {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "name": "Site loja desenvolvido em Curso - UX Design & Front-End",
+      "url": "https://github.com/rafitsdev/bikcraft",
+      "github": true
+    },
+    {
+      "name": "Projeto de formação da DIO para a criação de uma Pokedex",
+      "url": "https://github.com/rafitsdev/pokedex-project",
+      "github": true
+    },
+    {
+      "name": "Site fictício desenvolvido para demonstração de designs responsivos - Mobile First Design",
+      "url": "https://github.com/rafitsdev/WildBeast",
       "github": true
     }
   ],
