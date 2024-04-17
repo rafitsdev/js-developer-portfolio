@@ -72,8 +72,8 @@
   ],
   "professionalExperience": [
     {
-      "event": "Campus Party São Paulo",
-      "title": "1º Lugar Hackathon Correios - Cerrado Geeks",
+      "event": "Campus Party São Paulo - Cerrado Geeks",
+      "title": "1º Lugar Hackathon Correios - UX/UI Designer",
       "period": "Agosto - 2023",
       "challenge": "Como universalizar a codificação postal em nível de logradouro para realizar novos projetos com maior agilidade, assertividade e menor dependência de insumos de órgãos externos aos Correios.",
       "developedProject": "Usar a base nacional de geolocalização para conseguir mapear todas as vias, e assim, gerar CEPs a partir de Inteligência Artificial seguindo todos os parâmetros"
